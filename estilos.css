@@ -1,6 +1,7 @@
 *{
     margin:0 ;
     padding: 0;
+    background-color: #f8e9a8;
 }
 a{
     text-decoration-line: none;
@@ -12,10 +13,10 @@ a{
     justify-content: space-around;
 }
 .menu a{
-    color: #117e4b;
+    color: #0a0a0a;
 }
 .menu a:hover{
-    color: #095a34;
+    color: #666464;
     font-weight: bold;
 }
 .titulo h1,h2{
@@ -28,4 +29,14 @@ a{
 }
 .titulo video{
     width: 100%;
+}
+.formulario{
+    margin-top: 400px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+form label{
+    font-size: 20px;
+    color: #0c0c0b;
 }

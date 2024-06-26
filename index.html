@@ -10,13 +10,14 @@
     <nav class="menu">
         <a href="index.html">Inicio</a>
         <a href="quienessomos.html">Quienes Somos</a>
-        <a href="servicios.html">Servicios</a>
+        <a href="Costo Divorcio.html">Costo Divorcio</a>
         <a href="mediosdepago.html">Medios de Pago</a>
             
     </nav>
     <div class="titulo">
-        <video autoplay loop>
-            <source src="/assets/camino.mp4" type="video/mp4">
+        <video autoplay loop muted>
+            <source src="/assets/Video.mp4" type="video/mp4">
+            <source src="/assets/Video.ogv" type="video/ogv">
         </video>
         <h1>
             Abogados Expertos en Divorcios Sucesiones Compra Ventas y Herencias
@@ -24,8 +25,35 @@
         <h2>
             Servicios de Calidad a Bajo Costo. Consulta expertos en el tema
         </h2>
-
-
+    </div>
+    <div class="formulario">
+        <form action="" >
+           <h3>
+            Diligencia el Formulario y uno de Nuestros Asesores te contactara
+           </h3> 
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" value="" maxlength="10" required  placeholder="Nombre" name="nombre">
+            <br>
+            <label for="correo">Email:</label>
+            <input type="email" placeholder="Correo" name="correo">
+            <br>
+            <label for="">Cuentanos Tu Caso</label>
+            <br>
+            <textarea name="mensaje" rows="5" placeholder="Mensaje"></textarea>
+            <br>
+            <label for="pais">Pais:</label>
+            <select name="pais" id="pais">
+              <option value="colombia">Colombia</option>
+              <option value="Estados Unidos">Estados Unidos</option>                         
+              <option value="canada">Canada</option>
+            </select>
+            <br>
+            <input type="radio" name="genero" value="hombre" id="hombre"><label for="hombre">Hombre</label>
+            <input type="radio" name="genero" value="mujer" id="mujer"><label for="mujer">Mujer</label>
+            <br>
+            <input type="checkbox" name="terminos" id="terminos" ><label for="terminos">Terminos y condiciones </label>
+            <input type="submit" value="Enviar Mensaje">
+          </form>
     </div>
 </body>
 </html>
