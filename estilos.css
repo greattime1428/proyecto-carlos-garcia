@@ -1,42 +1,206 @@
-*{
-    margin:0 ;
-    padding: 0;
-    background-color: #f8e9a8;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-a{
-    text-decoration-line: none;
+a {
+  text-decoration-line: none;
 }
-.menu{
-    margin:10px 10px;
-    font-size: 30px;
+.menu {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color:lightgray;
+  padding: 30px;
+}
+.menu a {
+  color: #000000;
+}
+.menu a:hover {
+  font-weight: bold;
+}
+.titulo {
+  margin-bottom: 100px;
+}
+.titulo h1,
+h2 {
+  text-align: center;
+  font-size: 40px;
+  color: lightgray;
+}
+.titulo h1 {
+  margin-top: -150px;
+ 
+}
+.titulo video {
+  width: 100%;
+}
+.necesidad {
+  border-radius: 20px;
+  border-color: lightgray;
+  background-color: lightgray;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 50px;
+  margin-bottom: 30px;
+  box-shadow: 1px 7px 30px -1px rgba(0, 0, 0, 0.75);
+}
+.necesidad button {
+  padding: 30px 70px;
+  margin-top: 10px;
+  background-color: rgb(245, 10, 57);
+  border-radius: 20px;
+  border: none;
+}
+.necesidad .titulonecesidad h1 {
+  background-color: lightgray;
+}
+.titulonecesidad {
+  color: #f02323;
+  text-align: center;
+  background-color: lightgray;
+}
+.clicaqui {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  padding: 50px;
+}
+.necesidad button a {
+  font-size: 30px;
+  color: #f0e6e6;
+  background-color:#f02323;
+}
+.footer {
+  background-color:lightgray;
+  color: #f02323;
+  padding: 20px;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+form {
+  box-shadow: 1px 7px 30px -1px rgba(0, 0, 0, 0.75);
+}
+form label {
+  font-size: 20px;
+  color: #f02323;
+  background-color: rgb(240, 238, 238);
+}
+form select {
+  font-size: 20px;
+  border: none;
+}
+form select:focus {
+  outline: none;
+}
+.formulario input {
+  padding: 10px;
+  width: 80%;
+  border: none;
+  background-color: lightgrey;
+}
+.formulario input:focus {
+  outline: none;
+}
+.formulario input[type="submit"] {
+  background-color: #f02323;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 20px;
+  width: 100%;
+}
+.formulario input[type="submit"]:hover {
+  cursor: pointer;
+}
+.formulario h1 {
+  background-color: rgb(240, 238, 238);
+  color: #f02323;
+  text-align: center;
+}
+.formulario textarea {
+  width: 80%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.formulario textarea:focus {
+  outline: none;
+}
+.formulario form {
+  background-color: rgb(240, 238, 238);
+  padding: 30px;
+  border-radius: 20px;
+}
+.formulario {
+  padding: 30px;
+  margin-bottom: 50px;
+  width: 60%;
+}
+.calendario {
+  padding: 30px;
+  font-size: 20px;
+  color: #f02323;
+  background-color: lightgray;
+  margin-top: 30px;
+  border-radius:20px ;
+  margin-bottom: 50px;
+  box-shadow: 1px 7px 30px -1px rgba(0, 0, 0, 0.75);
+  }
+  .contenedor{
     display: flex;
     justify-content: space-around;
+  }
+.c{
+  display: flex;
+  justify-content: space-around;
 }
-.menu a{
-    color: #0a0a0a;
+.tip{
+  text-align: center;
+  color:#f02323;
 }
-.menu a:hover{
-    color: #666464;
-    font-weight: bold;
+.agendar{
+  justify-content: center;
+  display: flex;
+  }
+.agendar input[type='submit']{
+  font-size:15px;
 }
-.titulo h1,h2{
-    text-align: center;
-    font-size: 40px;
-    color :#fca21c;
+.container{
+  transform:rotate3d(.5,-.850,0,20deg) ;
+    font-style: italic;
+    font-size: 30px;
+    animation:movimiento 5s linear infinite;
+    background-color: rgb(240, 238, 238);
+    color:#f02323;
+    border-bottom: 3px solid #f02323;
+  }
+@keyframes movimiento {
+   0%{transform:rotate3d(.5,-.850,0,0deg) rotate(-1deg)  ;} 
+  25%{transform:rotate3d(.5,-.850,0,20deg) rotate(-1deg)  ;}
+  50%{transform:rotate3d(.5,-.850,0,25deg) rotate(-1deg)  ;}
+  75%{transform: rotate3d(.5,-.850,0,20deg) rotate(-1deg) ;}
+  100%{transform: rotate3d(.5,-.850,0,0deg) rotate(-1deg) ;}
 }
-.titulo h1{
-    margin-top: -400px;
+ol li{
+  padding: 5px;
+  list-style: none;
 }
-.titulo video{
-    width: 100%;
+body{
+  background-color:rgb(207, 226, 243);  
 }
-.formulario{
-    margin-top: 400px;
-    padding: 30px;
-    margin-bottom: 50px;
+.lista{
+  display: flex;
+  justify-content: center;
+}
+.imagenfiducia{
+  display: flex;
+  justify-content: center;
+}
+.imagenfiducia img{
+  width: 600px;
+}
+.subtitulo{
+  padding: 30px;
 }
 
-form label{
-    font-size: 20px;
-    color: #0c0c0b;
-}
